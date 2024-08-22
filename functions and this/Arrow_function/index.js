@@ -4,19 +4,19 @@ const greeting = function (name){
 
 
 //Arrow function - explicit return
-const newgreeting = (name) => {
+const new_greeting = (name) => {
     return `Hi, ${name}`
 }
 
 
 //Arrow function - implicit return
-const newgreetingImplicit = name => `Hi, ${name}`
-const newgreetingImplicitWithParametres = (name, lastname) => `Hi, I'm  ${name} ${lastname}`
+const new_greetingImplicit = name => `Hi, ${name}`
+const new_greetingImplicitWith_Parameters = (name, last_name) => `Hi, I'm  ${name} ${last_name}`
 
 //Lexical binding
 
-const finctionalCharacter = {
-    name: 'Incle Ben',
+const functionalCharacter = {
+    name: 'Uncle Ben',
     messageWithTraditionalFunction: function (message){
         console.log(`${this.name} says: ${message}`)
     },
@@ -25,5 +25,5 @@ const finctionalCharacter = {
     }
 }
 
-finctionalCharacter.messageWithTraditionalFunction('With reat power comes great responsability.')
-finctionalCharacter.messageWithArrowFunction('Beware of doctor Octopus.')
+functionalCharacter.messageWithTraditionalFunction('With great power comes great responsibility')
+functionalCharacter.messageWithArrowFunction('Beware of doctor Octopus.')
